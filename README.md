@@ -18,6 +18,10 @@ $ pnpm run dev
 $ pnpm start
 ```
 
+```
+$ yarn
+
+```
 Head over to https://vitejs.dev/ to learn more about using vite
 
 
