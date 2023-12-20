@@ -20,6 +20,7 @@ $ pnpm start
 
 Head over to https://vitejs.dev/ to learn more about using vite
 
+
 ## Cloning the project 🪛🔨
 
 ```
@@ -27,4 +28,5 @@ Head over to https://vitejs.dev/ to learn more about using vite
 $ git clone https://github.com/MastooraTurkmen/Word-Power.git
 
 # Go inside the repository
+$ cd Word-Power
 ```
