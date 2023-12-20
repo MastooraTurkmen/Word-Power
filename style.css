@@ -1,0 +1,332 @@
+body {
+  margin: 0;
+  display: flex;
+  justify-content: center;
+  background: #628395;
+}
+
+.wrapper {
+  width: 400px;
+  padding: 20px 0;
+}
+
+header,
+footer {
+  text-align: center;
+  background: #6d545d;
+  padding: 20px;
+  color: ghostwhite;
+}
+
+header {
+  border-top-left-radius: 15px;
+  border-top-right-radius: 15px;
+}
+
+footer {
+  line-height: 1.5em;
+  border-bottom-left-radius: 15px;
+  border-bottom-right-radius: 15px;
+}
+
+h1 {
+  margin: 0;
+}
+
+.word-container span {
+  font-weight: 700;
+  margin-right: 0.5em;
+  background: whitesmoke;
+  padding: 5px;
+  border-radius: 5px;
+  border: 1px solid gray;
+  box-shadow: 1px 2px 2px 1px black;
+}
+
+.word-container {
+  margin: auto;
+  overflow: scroll;
+  display: grid;
+  height: 1100px;
+  grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr;
+  grid-template-rows: 0.5fr 0.5fr 0.5fr 1fr 1fr 1fr 1fr 1fr;
+  gap: 0 0;
+  grid-template-areas:
+    "icon icon number number part-of-speech  part-of-speech "
+    "icon icon word word word word"
+    "category category pronounciation pronounciation pronounciation pronounciation"
+    "definition definition definition definition definition definition"
+    "example example example example example example"
+    "synonyms synonyms synonyms antonyms antonyms antonyms"
+    "note note note note note note"
+    "etymology etymology etymology etymology etymology etymology";
+}
+
+.el-container {
+  display: flex;
+  padding: 0 20px;
+}
+
+.word,
+.part-of-speech,
+.pronounciation,
+.number {
+  background: #f6ebe1;
+}
+
+.part-of-speech,
+.pronounciation {
+  align-items: center;
+}
+
+.el-container.definition {
+  justify-content: space-between;
+}
+
+.el-container.definition span {
+}
+
+.el-container.definition p {
+  flex-grow: 1;
+}
+
+.el-container.definition p.add-top-margin {
+  margin-top: 5px;
+}
+
+.definition,
+.example,
+.note,
+.etymology {
+  align-items: center;
+  padding: 20px;
+}
+
+.definition span,
+.example span,
+.note span,
+.etymology span {
+  margin-right: 40px;
+}
+
+.definition {
+  grid-area: definition;
+  background: #e3d5ca;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: flex-start;
+  gap: 10px;
+}
+
+.definition p {
+  margin: 0;
+}
+
+.example {
+  grid-area: example;
+  background: #d5bdaf;
+}
+
+.antonyms,
+.synonyms {
+  flex-direction: column;
+  align-items: center;
+  justify-content: flex-start;
+}
+
+.synonyms p {
+}
+
+.antonyms {
+  background: #d6ccc2;
+}
+
+.synonyms {
+  grid-area: synonyms;
+  background: #e3d5ca;
+}
+
+.synonyms span,
+.antonyms span {
+  width: 100px;
+  text-align: center;
+  margin-top: 20px;
+}
+
+.antonyms {
+  grid-area: antonyms;
+}
+
+.icon {
+  grid-area: icon;
+  font-size: 70px;
+  margin: 0;
+  justify-content: center;
+  align-items: center;
+}
+
+.category {
+  grid-area: category;
+  flex-direction: column;
+  align-items: center;
+}
+
+.category,
+.icon {
+  background: #d5bdaf;
+}
+
+.category span,
+.note span,
+.etymology span {
+  height: 1.2em;
+}
+
+.part-of-speech {
+  grid-area: part-of-speech;
+  font-size: 17px;
+  justify-content: center;
+  font-weight: 600;
+}
+
+.number {
+  grid-area: number;
+  align-items: center;
+  justify-content: flex-start;
+  font-size: 14px;
+}
+
+.note,
+.etymology {
+  align-items: center;
+}
+
+.note {
+  grid-area: note;
+  background: #f5ebe0;
+}
+
+.etymology {
+  grid-area: etymology;
+  background: #d5bdaf;
+}
+
+.word {
+  grid-area: word;
+  font-size: 45px;
+  justify-content: center;
+  align-items: center;
+}
+
+.pronounciation {
+  grid-area: pronounciation;
+  justify-content: center;
+}
+
+img {
+  height: 20px;
+  margin-right: 5px;
+}
+
+.two-buttons-container {
+  display: flex;
+}
+
+.button-container {
+  display: flex;
+  width: 50%;
+}
+
+.button-container:first-of-type {
+  border-right: 1px solid gray;
+}
+
+button {
+  --primary-color: #474448;
+  --secondary-color: #fff;
+  --hover-color: #2f2f2f;
+  --arrow-width: 10px;
+  --arrow-stroke: 2px;
+  box-sizing: border-box;
+  border: 0;
+  color: var(--secondary-color);
+  padding: 1em 1.8em;
+  background: var(--primary-color);
+  display: flex;
+  transition: 0.2s background;
+  justify-content: center;
+  align-items: center;
+  gap: 0.6em;
+  font-weight: bold;
+  margin: 0px auto;
+  width: 100%;
+}
+
+button:hover {
+  cursor: pointer;
+}
+
+button:active {
+  transform: none;
+  filter: brightness(0.5);
+}
+
+button:focus:not(:focus-visible) {
+  outline: 0;
+  box-shadow: none;
+}
+
+button .arrow-wrapper {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+button .arrow-wrapper .reverse {
+  transform: scaleX(-1);
+}
+
+button .arrow {
+  margin-top: 1px;
+  width: var(--arrow-width);
+  background: var(--primary-color);
+  height: var(--arrow-stroke);
+  position: relative;
+  transition: 0.2s;
+}
+
+button .arrow::before {
+  content: "";
+  box-sizing: border-box;
+  position: absolute;
+  border: solid var(--secondary-color);
+  border-width: 0 var(--arrow-stroke) var(--arrow-stroke) 0;
+  display: inline-block;
+  top: -3px;
+  right: 3px;
+  transition: 0.2s;
+  padding: 3px;
+  transform: rotate(-45deg);
+}
+
+.arrow.back:before {
+  transform: rotate(-225deg);
+}
+
+button:hover {
+  background-color: var(--hover-color);
+}
+
+button:hover .arrow {
+  background: var(--secondary-color);
+}
+
+button:hover .arrow:before {
+  right: 0;
+}
+
+a {
+  color: #76aaff;
+  filter: brightness(1.3);
+}

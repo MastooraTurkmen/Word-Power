@@ -1,0 +1,92 @@
+export default [
+    {
+        word: "audacity",
+        pronunciation: "aw - da - suh - tee",
+        definition: ["A willingness to take bold risks.", "Rude, disrespectful, impudent, or arrogant behavior."],
+        icon: "💪",
+        category: "power word",
+        note: "This word can have a positive or negative connotation, depending on whether the first or second meaning is intended.",
+        partOfSpeech: "noun",
+        example: `"Sarah was impressed by the audacity of Madison's plan for reorganizing their department, but John was taken aback by it, especially since Sarah was new to the company."`,
+        synonyms: ["temerity", "brashness", "cheekiness", "chutzpa", "nerve", "presumption", "gall", "brazenness"],
+        antonyms: ["timidity", "bashfulness", "diffidence", "modesty", "hesitancy"],
+        etymology: 'Middle English audacite, from Medieval Latin audācitāt-, audācitās, from Latin audāc-, audāx, meaning daring, bold, etc.'
+    },
+    {
+        word: "liminal",
+        pronunciation: "li - muh - nuhl",
+        definition: ["Located at or on both sides of a boundary or threshold.", "Relating to an initial or intermediate stage of a process, period, or state."],
+        icon: "🤓",
+        category: "technical",
+        note: "This word is not commonly used outside of academia and literary discourse.",
+        partOfSpeech: "adjective",
+        example: '"Having recently turned 18 years old, Tim was in that strange liminal space between adolescence and adulthood."',
+        synonyms: ["interstitial", "intermediate", "unsettled", "borderline", "littoral"],
+        antonyms: ["terminal", "settled", "finished"],
+        etymology: "Latin: limen, meaning threshold"
+    },{
+        word: "eluvium",
+        pronunciation: "ih - loo - vee - um",
+        definition: ["Soil or debris produced by the weathering and disintegration of rock in the same place as its origin (rather than carried there by wind or water)."],
+        icon: "🥼",
+        category: "scientific",
+        note: "There's a great ambient/electronic music artist who goes by the name Eluvium. Check out their songs 'Radio Ballet', 'Prelude for Time Feelers', 'The Motion Makes Me Last', and 'Reciting the Airships'.",
+        partOfSpeech: "noun",
+        example: '"Many precious minerals could be found in the eluvium of the region, so the mining company concentrated its operations there."',
+        synonyms: ["eluvial deposits"],
+        antonyms: ["alluvium", "colluvium",  ""],
+        etymology: "Latin: eluere, meaning to to wash out, and alluere, meaning to wash against."
+    },
+    {
+        word: "crepuscular",
+        pronunciation: "kruh - puh - skyuh - lur",
+        definition: ["Of, resembling, or relating to twilight."],
+        icon: "🖌",
+        category: "literary",
+        note: "While this word is often used in literary and poetic contexts, it is also used in zoology to refer to animals who are active in the twilight.",
+        partOfSpeech: "adjective",
+        example: '"In the faint, crepuscular light that filled the sky in the minutes after sunset, the distant mountains looked like faint silhouettes rising up from the horizon."',
+        synonyms: ["fading", "cloudy", "shadowy", "gloomy", "murky"],
+        antonyms: ["bright", "luminous", "sunny"],
+        etymology: "Latin: crepusculum, meaning twilight"
+    }, 
+    {
+        word: "perambulate",
+        pronunciation: "per - am - byoo - layt ",
+        definition: ["To walk around a place, especially if you are doing it for pleasure and in a leisurely manner."],
+        icon: "🎩",
+        category: "formal/humorous",
+        note: "This is a very fancy, overly formal way of saying that you're walking around somewhere. It's so formal that it's considered kind of humorous to say it out loud!",
+        partOfSpeech: "verb",
+        example: '"The police officer asked me what I was doing there, and I told him I was just perambulating around. The next thing I knew, I woke up in a jail cell."',
+        synonyms: ["walk", "stroll", "amble", "saunter", "wander", "ramble", "meander", "roam"],
+        antonyms: ["trudge", "plod", "lumber", "tramp", "trek", "traipse"],
+        etymology: "Latin: from the verb perambulare —  per (‘all over’) + ambulare (‘to walk’)"
+    },
+    {
+        word: "loquacious",
+        pronunciation: "low - kway - shus",
+        definition: ["Tending to talk a lot.", "Given to excessive talking."],
+        icon: "😲",
+        category: "big word",
+        note: "People might look at you a little strange if you use this word in everyday speech. They will also probably think you are smart and/or pretentious. ",
+        partOfSpeech: "adjective",
+        example: '"My nephew is a loquacious little kid. He talked my ear off the entire car ride to the store."',
+        synonyms: ["talkative", "voluble", "verbose", "effusive", "prolix", "garrulous", "voluble"],
+        antonyms: ["untalkative", "uncommunicative", "taciturn", "reticent", "reserved", "tight-lipped"],
+        etymology: "Latin: from loqui, meaning talk)"
+    },
+      {
+        word: "adumbrate",
+        pronunciation: "ad - um - brayt",
+        definition: ["To foreshadow or indicate something vaguely.", "To report or represent something in outline.", "To overshadow or obscure something."],
+        icon: "🤵🏻‍♂️",
+        category: "formal/serious",
+        note: "This is a serious word for serious people — usually used only in formal, academic, or literary writing. People would very rarely say it out loud.",
+        partOfSpeech: "verb",
+        example: '"In his latest essay, the philosopher adumbrated a new theory of knowledge, but he will need to do more work in the future to fill in all of the details."',
+        synonyms: ["foreshadow", "portend", "indicate", "outline", "suggest", "signal", "betoken"],
+        antonyms: ["explicate", "elucidate", "illuminate", "clarify", "spell out"],
+        etymology: "Latin: from adumbrāre, meaning to shade, outline, or represent something by means of light and shade.'"
+    }
+]
