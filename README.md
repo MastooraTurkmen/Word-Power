@@ -30,3 +30,8 @@ $ git clone https://github.com/MastooraTurkmen/Word-Power.git
 # Go inside the repository
 $ cd Word-Power
 ```
+
+-----
+
+
+## Languages and Tools are used 🗣️🔧
